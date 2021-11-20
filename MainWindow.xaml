@@ -63,9 +63,9 @@
                         <TextBox x:Name="lastNameTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="3" Grid.Row="2" Text="{Binding LastName, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120" Validation.ErrorTemplate="{StaticResource validationTemplate}"   
                     Style="{StaticResource textBoxInError}"/>
                     </Grid>
-                    <Button x:Name="btnNew" Grid.ColumnSpan="4" Content="New" HorizontalAlignment="Left" Margin="29,42,0,0" VerticalAlignment="Top" Width="75"/>
-                    <Button x:Name="btnEdit" Grid.ColumnSpan="4" Content="Edit" HorizontalAlignment="Left" Margin="29,78,0,0" VerticalAlignment="Top" Width="75"/>
-                    <Button x:Name="btnDelete" Grid.ColumnSpan="4" Content="Delete" HorizontalAlignment="Left" Margin="29,109,0,0" VerticalAlignment="Top" Width="75" Cursor=""/>
+                    <Button x:Name="btnNew" Grid.ColumnSpan="4" Content="New" HorizontalAlignment="Left" Margin="29,42,0,0" VerticalAlignment="Top" Width="75" Click="btnNew_Click"/>
+                    <Button x:Name="btnEdit" Grid.ColumnSpan="4" Content="Edit" HorizontalAlignment="Left" Margin="29,78,0,0" VerticalAlignment="Top" Width="75" Click="btnEdit_Click"/>
+                    <Button x:Name="btnDelete" Grid.ColumnSpan="4" Content="Delete" HorizontalAlignment="Left" Margin="29,109,0,0" VerticalAlignment="Top" Width="75" Cursor="" Click="btnDelete_Click"/>
                     <Button x:Name="btnSave" Grid.ColumnSpan="4" Content="Save" HorizontalAlignment="Left" Margin="29,179,0,0" VerticalAlignment="Top" Width="75" Click="btnSave_Click"/>
                     <Button x:Name="btnCancel" Grid.ColumnSpan="4" Content="Cancel" HorizontalAlignment="Left" Margin="29,214,0,0" VerticalAlignment="Top" Width="75" Cursor=""/>
                     <Button x:Name="btnPrev" Content="Previous" HorizontalAlignment="Left" Margin="163,134,0,0" VerticalAlignment="Top" Width="75" Grid.Column="3" Click="btnPrev_Click"/>
@@ -105,9 +105,9 @@
                         <Label Content="Make:" Grid.Column="0" HorizontalAlignment="Left" Margin="3,3,0,3" Grid.Row="3" VerticalAlignment="Center"/>
                         <TextBox x:Name="makeTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="24" Margin="3,4,0,4" Grid.Row="3" Text="{Binding Make, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120"/>
                     </Grid>
-                    <Button x:Name="btnNew_Copy" Content="New" HorizontalAlignment="Left" Margin="17,41,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2" Grid.Column="1"/>
-                    <Button x:Name="btnEdit_Copy" Grid.ColumnSpan="2" Content="Edit" HorizontalAlignment="Left" Margin="17,78,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1"/>
-                    <Button x:Name="btnDelete_Copy" Grid.ColumnSpan="2" Content="Delete" HorizontalAlignment="Left" Margin="17,109,0,0" VerticalAlignment="Top" Width="75" Cursor="" Grid.Column="1"/>
+                    <Button x:Name="btnNew_Copy" Content="New" HorizontalAlignment="Left" Margin="17,41,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2" Grid.Column="1" Click="btnNew_Copy_Click"/>
+                    <Button x:Name="btnEdit_Copy" Grid.ColumnSpan="2" Content="Edit" HorizontalAlignment="Left" Margin="17,78,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1" Click="btnEdit_Copy_Click"/>
+                    <Button x:Name="btnDelete_Copy" Grid.ColumnSpan="2" Content="Delete" HorizontalAlignment="Left" Margin="17,109,0,0" VerticalAlignment="Top" Width="75" Cursor="" Grid.Column="1" Click="btnDelete_Copy_Click"/>
                     <Button x:Name="btnSave_Copy" Grid.ColumnSpan="2" Content="Save" HorizontalAlignment="Left" Margin="17,179,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1" Click="btnSave_Copy_Click"/>
                     <Button x:Name="btnCancel_Copy" Grid.ColumnSpan="2" Content="Cancel" HorizontalAlignment="Left" Margin="17,214,0,0" VerticalAlignment="Top" Width="75" Cursor="" Grid.Column="1"/>
                     <Button x:Name="btnPrev_Copy" Content="Previous" HorizontalAlignment="Left" Margin="109.5,134,0,0" VerticalAlignment="Top" Width="75" Grid.Column="3" Click="btnPrev_Copy_Click"/>
@@ -184,9 +184,9 @@
                     </DataGrid>
                     <Label x:Name="lblCustomers" Content="Customers" Grid.Column="2" HorizontalAlignment="Left" Margin="23,42,0,0" VerticalAlignment="Top"/>
                     <Label x:Name="lblInventory" Content="Inventory" Grid.Column="2" HorizontalAlignment="Left" Margin="357,42,0,0" VerticalAlignment="Top"/>
-                    <Button x:Name="btnNew_Ord" Content="New" HorizontalAlignment="Left" Margin="16,41,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2" Grid.Column="1"/>
+                    <Button x:Name="btnNew_Ord" Content="New" HorizontalAlignment="Left" Margin="16,41,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2" Grid.Column="1" Click="btnNew_Ord_Click"/>
                     <Button x:Name="btnEdit_Ord" Grid.ColumnSpan="2" Content="Edit" HorizontalAlignment="Left" Margin="16,78,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1" Click="btnEdit_Ord_Click"/>
-                    <Button x:Name="btnDelete_Ord" Grid.ColumnSpan="2" Content="Delete" HorizontalAlignment="Left" Margin="16,109,0,0" VerticalAlignment="Top" Width="75" Cursor="" Grid.Column="1"/>
+                    <Button x:Name="btnDelete_Ord" Grid.ColumnSpan="2" Content="Delete" HorizontalAlignment="Left" Margin="16,109,0,0" VerticalAlignment="Top" Width="75" Cursor="" Grid.Column="1" Click="btnDelete_Ord_Click"/>
                     <Button x:Name="btnSave_Ord" Grid.ColumnSpan="2" Content="Save" HorizontalAlignment="Left" Margin="16,179,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1" Click="btnSave_Ord_Click" >
                         <Button.Style>
                             <Style TargetType="{x:Type Button}">

@@ -353,5 +353,54 @@ namespace Ciortea_Adrian_Lab5
 
             SetValidationBinding();
         }
+
+        private void btnDelete_Ord_Click(object sender, RoutedEventArgs e)
+        {
+             action = ActionState.Delete;
+
+        }
+
+        private void btnNew_Ord_Click(object sender, RoutedEventArgs e)
+        {
+             action = ActionState.New;
+
+        }
+
+        private void btnNew_Copy_Click(object sender, RoutedEventArgs e)
+        {
+             action = ActionState.New;
+
+        }
+
+        private void btnEdit_Copy_Click(object sender, RoutedEventArgs e)
+        {
+             action = ActionState.Edit;
+
+            SetValidationBinding();
+        }
+
+        private void btnDelete_Copy_Click(object sender, RoutedEventArgs e)
+        {
+             action = ActionState.Delete;
+
+            
+        }
+
+        private void btnDelete_Click(object sender, RoutedEventArgs e)
+        {
+             action = ActionState.Delete;
+        }
+
+        private void btnEdit_Click(object sender, RoutedEventArgs e)
+        {
+             action = ActionState.Edit;
+
+            SetValidationBinding();
+        }
+
+        private void btnNew_Click(object sender, RoutedEventArgs e)
+        {
+             action = ActionState.New;
+        }
     }
 }
